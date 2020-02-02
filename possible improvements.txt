@@ -3,3 +3,6 @@
 3. Show how many tasks are completed
 4. Add statistics for previos days based on oldtasks
 5. Add by word text wrapping
+6. Move rang to third_party folder
+7. Create entries for today and tomorrow in tasks file, if not present
+8. Add package support in cmake
