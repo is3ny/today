@@ -1,0 +1,5 @@
+1. Show the time left for the closest deadline
+2. Show version
+3. Show how many tasks are completed
+4. Add statistics for previos days based on oldtasks
+5. Add by word text wrapping

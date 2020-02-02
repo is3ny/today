@@ -1,0 +1,47 @@
+1. Frontend interface
+./today
+    Prints tasksheet for the current day
+
+./today N
+    Prints a tasksheet for the Nth day.
+
+
+2. Files
+For the correct operation two files have to be controled. By changing them user may edit tasks.
+The two files are oldtasks and tasks. They are located in the $HOME directory.
+
+The files contain consequetive blocks of the next syntax
+    yyyy-mm-dd
+    {status_char 24h_time description\n}*
+    \n
+
+2.1 oldtasks contain blocks that are past today.
+2.2 tasks contain blocks that are today and in the future
+2.3 At the start of execution, old blocks must be extracted from tasks and appended to oldtasks
+2.4 Blocks in oldtasks and tasks are sorted in ascending order
+
+
+3. Output of the program
+
+<CURTIME> <TIME>  <DESCRIPTION>
+  13:40  Eat dinner
+* -----  ---------------------------- 
+  15:30  Make dishes
+  16:20  Sing a song
+  19:00  Crate at least one anki deck
+  21:00  Finish homework
+
+States of tasks: # unfinished; O complete; X failed; ! completed after failure
+Let color scheme be set up in config.h for each of states for each position relative to the time line: before, inside, after.
+
+The times may not be sorted in tasks file but they are stabily sorted in ascending order in the output.
+
+config.h allows to customize these proporties
+* STAR_TIME_SPACE
+* TIME_DESC_SPACE
+* COLOR_THEME MAP
+* DESC_WIDTH
+* TIME_STAR
+
+Also don't forget when time is exactly at the deadline -- several stars should appear
+Let scheme define foreground and background colors, make implicit constructor from one color only as forground.
