@@ -64,9 +64,7 @@ int Application::m_Main()
     std::list<Tasksheet> tsheets;
     
     // TODO: Error handling
-    try {
-        m_LoadTasksheets(tsheets);
-    }
+    m_LoadTasksheets(tsheets);
 
     tsheets.sort();     // By date
 

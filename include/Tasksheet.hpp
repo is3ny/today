@@ -15,6 +15,8 @@ struct Task
 
 };
 
+// TODO: WTH? Two operator< functions. It may even look like I don't know how 
+//       operator overloading works...
 bool operator<(const Task& a, const Task& b);
 
 struct Tasksheet

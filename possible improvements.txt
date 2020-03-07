@@ -6,3 +6,4 @@
 6. Move rang to third_party folder
 7. Create entries for today and tomorrow in tasks file, if not present
 8. Add package support in cmake
+9. Add error prompt to config
