@@ -23,3 +23,6 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include ${Boost_INCLUDE_DIR})
 target_link_directories(${PROJECT_NAME} PRIVATE ${Boost_LIBRARY_DIR})
 target_link_libraries(${PROJECT_NAME} PRIVATE ${Boost_LIBRARIES})
+
+install(TARGETS ${PROJECT_NAME} RUNTIME)
+
