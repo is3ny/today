@@ -13,7 +13,7 @@ The intent of the deadlines is to help user (me) set realistic deadlines. The ta
 
 ### Customize
 
-The config.h file contains various options that one can tweak.
+The config.cpp file contains various options that one can tweak.
 
 ### Dependencies
 
